@@ -10,7 +10,7 @@ class ScoreBoard(Turtle):
         super().__init__()
         try:
             with open("data.txt") as data:
-                content = data.read()
+                content = data.read().strip()
                 if content == "":
                     self.high_score = 0
                 else:
